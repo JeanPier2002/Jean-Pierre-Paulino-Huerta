@@ -1,0 +1,61 @@
+/* styles.css */
+/* Estilos para h2 con tamaño de letra más grande */
+h2 {
+  font-size: 2.5rem; /* Tamaño de letra más grande (equivalente a 25px en este caso) */
+  font-weight: bold; /* Establecer negrita para enfatizar el texto */
+  color: #333; /* Color de texto (por ejemplo, negro) */
+  margin-bottom: 20px; /* Espaciado inferior para separar de otros elementos */
+}
+h1{
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+}
+
+
+
+/* Estilos para los botones y texto */
+body {
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a todo el cuerpo del documento */
+}
+
+.btn {
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a todos los botones */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Aplicar la fuente Roboto a todos los encabezados */
+}
+
+.btn-interests {
+  position: relative; /* Hacer que la posición del botón sea relativa */
+  overflow: hidden; /* Ocultar el contenido que sobresale */
+}
+
+.btn-interests::before {
+  content: ''; /* Agregar contenido al pseudo-elemento */
+  position: absolute; /* Hacer que la posición del pseudo-elemento sea absoluta */
+  top: 0; /* Posicionar en la parte superior */
+  left: 0; /* Posicionar en la parte izquierda */
+  width: 100%; /* Ancho del pseudo-elemento */
+  height: 100%; /* Altura del pseudo-elemento */
+  background-color: rgba(214, 200, 200, 0.3); /* Color de fondo con transparencia */
+  transition: transform 0.3s ease; /* Transición de transformación */
+  transform: scaleX(0); /* Inicialmente oculto */
+  transform-origin: left; /* Origen de la transformación */
+}
+
+.btn-interests:hover::before {
+  transform: scaleX(1); /* Mostrar el pseudo-elemento al pasar el mouse */
+}
+
+/* Estilos para el contenido del botón */
+.btn-interests span {
+  position: relative; /* Hacer que la posición del contenido sea relativa */
+  z-index: 1; /* Establecer el índice z para que esté encima del pseudo-elemento */
+}
+.nav-item{
+  margin: 0 50px; 
+}
+
+
+
